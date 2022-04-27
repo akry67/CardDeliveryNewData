@@ -12,11 +12,8 @@ import java.util.Locale;
 @UtilityClass
 public class DataGenerator {
 
-    private static Faker faker;
+    private static Faker faker = new Faker(new Locale("ru"));
 
-    static void setUpAll() {
-        faker = new Faker(new Locale("ru"));
-    }
 
     @UtilityClass
     public static class Registration {
